@@ -1,0 +1,39 @@
+/* Example CSS File */
+
+/* Class selectors */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+.button {
+    background-color: blue; /* Lowercase value keyword */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ID selector */
+#main-content {
+    margin: 20px;
+}
+
+/* Pseudo-class example */
+.button:hover {
+    background-color: darkblue; /* Lowercase value keyword */
+}
+
+/* Media query example */
+@media screen and (max-width: 600px) {
+    .container {
+    }
+}

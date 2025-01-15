@@ -1,0 +1,10 @@
+{
+    "rules":
+    {
+        "declaration-block-no-duplicate-properties": "true",
+        "no-duplicate-selectors":"true",
+        "selector-type-case":"lower",
+        "value-keyword-case": "lower",
+        "block-no-empty":"true"
+    }
+}

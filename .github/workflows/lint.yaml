@@ -1,0 +1,24 @@
+name : linting-wf
+on : 
+  push: 
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+jobs:
+  linting-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: install htmlhint
+        run: npm install --save-dev htmlhint
+      - name: install htmlhint
+        run: npm install --save-dev stylelint
+      - name: lint HTML files
+        run: npx htmlhint "**/*.html"
+      - name: lint CSS files
+        run:  npx htmlhint "**/*.css" 
+      - name: display package.json contents
+        run: cat package.json
